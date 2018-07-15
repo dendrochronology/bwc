@@ -5,7 +5,7 @@ number: 2
 featured_image: "/uploads/peerie-ponies.jpg"
 publication_date: 2018-07-17 00:00:00 -04:00
 stories:
-- Story about guys
+- First story
 ---
 
 This issue is about other stuff.
