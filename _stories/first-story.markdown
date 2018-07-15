@@ -4,7 +4,9 @@ date: 2018-07-15 15:03:00 -04:00
 permalink: first-story-perm
 publication_date: 2018-07-15 00:00:00 -04:00
 featured_image: "/uploads/peerie-ponies.jpg"
-authors: The Dude
+authors:
+- The Dude
+- Jim Jimmers
 ---
 
 Incididunt ullamco et dolor adipisicing dolore amet. Velit in adipisicing labore eiusmod consectetur cillum dolore dolor in. Magna Lorem sit ad nisi duis culpa. Velit ea aliqua aliqua culpa fugiat in nisi cillum elit commodo consectetur commodo excepteur. Reprehenderit anim est nostrud in occaecat exercitation consectetur eu excepteur minim excepteur velit.
