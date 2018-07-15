@@ -35,6 +35,10 @@ defaults:
     publication_date: 
     stories:
     - 
+    - 
+    - 
+    - 
+    - 
 - scope:
     path: ''
     type: posts
