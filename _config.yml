@@ -34,6 +34,7 @@ defaults:
     featured_image: 
     publication_date: 
     stories: 
+      - 
 - scope:
     path: ''
     type: posts
