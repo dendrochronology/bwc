@@ -33,8 +33,8 @@ defaults:
     number: 
     featured_image: 
     publication_date: 
-    stories: 
-      - 
+    stories:
+    - 
 - scope:
     path: ''
     type: posts
