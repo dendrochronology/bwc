@@ -30,7 +30,7 @@ defaults:
   values:
     layout: page
 - scope:
-    path: stories
+    path: ''
     type: stories
   values:
     layout: page
