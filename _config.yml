@@ -29,7 +29,7 @@ defaults:
     path: ''
     type: issues
   values:
-    layout: post
+    layout: issue
     number: 
     featured_image: 
     publication_date: 
@@ -60,3 +60,7 @@ defaults:
     featured_image: 
     authors: 
 permalink: pretty
+baseurl: ""
+theme: minima
+sass:
+    sass_dir: _sass

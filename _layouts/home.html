@@ -1,0 +1,46 @@
+---
+layout: default
+image: "neighbors_thumbnail.jpg"
+---
+
+<div class="home">
+
+  <h2>issue {{ page.number }}: <em>{{ page.title }}</em></h2>
+
+  {{ content }}
+
+  <h3>Previous Issues:</h3>
+  <ul>
+{% for issue in site.issues %}
+  {% unless issue.hidden %}
+    <li><a class="post-link" href="{{ issue.url | relative_url }}">{{ issue.number }}: {{ issue.title }}</a></li>
+  {% endunless %}
+{% endfor %}   
+  </ul>
+
+<!--
+{% for category in site.categories %}
+  {% if category contains 'feature' %}
+  {% else %}
+  {% assign this_issue = site.issues | where:"title", 'outcomes'  | first %}
+    <h4 class="category_group">issue {{this_issue.number}}: {{ category | first }}<a name="{{ category | first }}"></a></h4>
+      <ul class="post-list">
+      {% for posts in category %}
+        {% for post in posts %}
+          {% if post.url != null %}
+            <li>
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <strong>
+                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+              </strong>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      </ul>
+    {% endif %}
+{% endfor %}
+-->
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>

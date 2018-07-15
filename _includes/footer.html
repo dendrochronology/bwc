@@ -1,0 +1,80 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+  <p class="copyright">All materials &copy; 2018 Between Coasts. May not be reprinted without permission.</p>
+
+    <!-- <h2 class="footer-heading">{{ site.title | escape }}</h2> -->
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>
+            {% if site.author %}
+              {{ site.author | escape }}
+            {% endif %}
+            </li>
+            {% if site.email %}
+            <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.instagram_username %}
+          <li>
+            {% include icon-instagram.html username=site.instagram_username %}
+          </li>
+          {% endif %}
+
+          {% if site.facebook_page %}
+          <li>
+            {% include icon-facebook.html pagename=site.facebook_page %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p class="footer-tagline">{{ site.description | escape }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-88516212-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '242211986196668',
+      xfbml      : true,
+      version    : 'v2.8'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>

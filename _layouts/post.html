@@ -1,0 +1,35 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    {% if page.subtitle %}
+      <h1 class="post-title" itemprop="name headline" style="margin-bottom: 0;">{{ page.title | escape | no_widows }}</h1>
+      <h2 class="post-subtitle" itemprop="name headline">{{ page.subtitle | escape | no_widows }}</h2>
+    {% else %}
+      <h1 class="post-title" itemprop="name headline">{{ page.title | escape | no_widows }}</h1>
+    {% endif %}
+    <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%b %-d, %Y" }}</time>
+      {% if page.author %} • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
+      {% if page.illustrator %} • <span itemprop="illustrator" itemscope itemtype="http://schema.org/Person"><span itemprop="name">illustrations by {{ page.illustrator }}</span></span>{% endif %}
+      {% if page.photographer %} • <span itemprop="photographer" itemscope itemtype="http://schema.org/Person"><span itemprop="name">images by {{ page.photographer }}</span></span>{% endif %}
+    </p>
+    {% include _share-page.html %}
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+{% if page.authorbio != null %}
+  <div class="post-authorbio" itemprop="articleBody">
+    <strong>{{ page.author }}</strong> {{ page.authorbio }}
+  </div>
+{% endif %}
+
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
+  <p style="text-align: right;"><a href="/">between coasts home page &raquo;</a></p>
+</article>
