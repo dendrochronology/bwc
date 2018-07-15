@@ -1,8 +1,0 @@
-{
-  "files.associations": {
-    "*.html": "jekyll",
-    "*.markdown": "jekyll",
-    "*.md": "jekyll"
-  },
-  "scss.validate": false
-}
