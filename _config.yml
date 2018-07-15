@@ -60,7 +60,7 @@ defaults:
     featured_image: 
     authors: 
 permalink: pretty
-baseurl: ""
+baseurl: ''
 theme: minima
 sass:
-    sass_dir: _sass
+  sass_dir: _sass

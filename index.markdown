@@ -1,9 +1,7 @@
 ---
-# Home page issue.
-# Use title, number, and feature include for current issue.
-title:  "frontiers"
+title: frontiers
+date: 2018-02-10 07:00:00 -05:00
 number: 5
-date:   2018-02-10 08:00:00 -0400
 layout: default
 ---
 
