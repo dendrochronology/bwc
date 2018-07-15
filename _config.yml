@@ -29,4 +29,13 @@ defaults:
     type: pages
   values:
     layout: page
+- scope:
+    path: "stories"
+    type: stories
+  values:
+    layout: page
+    slug: ""
+    publication_date: ""
+    featured_image: ""
+    authors: ""
 permalink: pretty
