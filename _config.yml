@@ -34,8 +34,8 @@ defaults:
     type: stories
   values:
     layout: page
-    slug:
-    publication_date:
-    featured_image:
-    authors:
+    slug: 
+    publication_date: 
+    featured_image: 
+    authors: 
 permalink: pretty
