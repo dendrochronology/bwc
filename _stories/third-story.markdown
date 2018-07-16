@@ -1,9 +1,8 @@
 ---
 title: Third Story
 date: 2018-07-15 17:49:00 -04:00
-featured_image: "/assets/img/0005/feature2_place.jpg"
 permalink: "/story-the-third"
-slug: third-slug
+featured_image: "/assets/img/0005/feature2_place.jpg"
 publication_date: 2018-06-11 00:00:00 -04:00
 ---
 
