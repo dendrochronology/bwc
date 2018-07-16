@@ -7,12 +7,46 @@ layout: default
   {{ content }}
 
   <h2>Stories</h2>
-  <ul>
+  {% assign story_0 = site.stories | where:"title", page.stories[0] | first %}
+  {% assign story_1 = site.stories | where:"title", page.stories[1] | first %}
+  {% assign story_2 = site.stories | where:"title", page.stories[2] | first %}
+  {% assign story_3 = site.stories | where:"title", page.stories[3] | first %}
+  {% assign story_4 = site.stories | where:"title", page.stories[4] | first %}
+  {% comment %} {% assign stories = [story_0, story_1, story_2, story_3, story_4] %} {% endcomment %}
+  {% comment %} <ul>
   {% for storyTitle in page.stories %}
     {% assign story = site.stories | where:"title", storyTitle  | first %}
     <li>{{ story.title }} - <img style="width: 64px; height: auto;" src="{{ story.featured_image }}" /></li>
   {% endfor %}
-  </ul>
+    <li>{{ story_0.title }} <img style="width: 64px; height: auto;" src="{{ story_0.featured_image }}" /></li>
+    <li>{{ story_1.title }} <img style="width: 64px; height: auto;" src="{{ story_1.featured_image }}" /></li>
+    <li>{{ story_2.title }} <img style="width: 64px; height: auto;" src="{{ story_2.featured_image }}" /></li>
+    <li>{{ story_3.title }} <img style="width: 64px; height: auto;" src="{{ story_3.featured_image }}" /></li>
+    <li>{{ story_4.title }} <img style="width: 64px; height: auto;" src="{{ story_4.featured_image }}" /></li>
+  </ul> {% endcomment %}
+
+  {% include _feature_template.html
+    url_0=story_0.permalink
+    title_0=story_0.title
+    img_0=story_0.featured_image
+
+    url_1=story_1.permalink
+    title_1=story_1.title
+    img_1=story_1.featured_image
+
+    url_2=story_2.permalink
+    title_2=story_2.title
+    img_2=story_2.featured_image
+
+    url_4=story_4.permalink
+    title_4=story_4.title
+    img_4=story_4.featured_image
+
+    url_3=story_3.permalink
+    title_3=story_3.title
+    img_3=story_3.featured_image
+  %}
+
 
   <h3>Previous Issues:</h3>
   <ul>

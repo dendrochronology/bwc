@@ -6,6 +6,9 @@ number: 1
 stories:
 - First story
 - Second Story
+- Third Story
+- Fourth Story
+- Fifth Story
 ---
 
 Woohoo! More _stuff_!

@@ -1,6 +1,7 @@
 ---
 title: Second Story
 date: 2018-07-15 17:29:00 -04:00
+featured_image: "/assets/img/0005/feature2_place.jpg"
 permalink: "/the-second-story"
 publication_date: 2018-06-11 00:00:00 -04:00
 authors: The Dude
